@@ -18,7 +18,7 @@ jobs:
         run: |
           echo "Last run: $(date -u)" > changelog.txt
 
-      - name: Commit changes - Your Email 23@ds.study.iitm.ac.in
+      - name: Commit changes - Your Email 23f1001348@ds.study.iitm.ac.in
         run: |
           git config --global user.name "Royiitian"
           git config --global user.email "23f1001348@ds.study.iitm.ac.in"
