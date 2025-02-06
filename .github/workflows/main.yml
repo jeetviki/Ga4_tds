@@ -2,7 +2,7 @@ name: Daily Commit
 
 on:
   schedule:
-    - cron: "30 2 * * *"  # Runs daily at 02:30 UTC
+    - cron: "30 2 * * *"  # Runs daily at 05:30 UTC
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -18,10 +18,10 @@ jobs:
         run: |
           echo "Last run: $(date -u)" > changelog.txt
 
-      - name: Commit changes - Your Email 23f1001348@ds.study.iitm.ac.in
+      - name: Commit changes - Your Email 24ds2000024@ds.study.iitm.ac.in
         run: |
-          git config --global user.name "Royiitian"
-          git config --global user.email "23f1001348@ds.study.iitm.ac.in"
+          git config --global user.name "jeetviki"
+          git config --global user.email "24ds2000024@ds.study.iitm.ac.in"
           git add changelog.txt
           git commit -m "Daily update: $(date -u)" || exit 0  # Avoid failure if no changes
           git push
